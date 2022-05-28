@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    min-height: auto;
+}
+
+.main-head {
+    grid-area: header;
+    background-color: #e6f0f0;
+    display: flexbox;
+    background-image: url("../imagenes/Posible-fondo.png");
+    
+}
+  .content {
+    grid-area: content;
+    background-image: url("../imagenes/fondopastel.png");
+    opacity: .9;
+       
+}
+
+  .main-nav {
+    grid-area: nav;
+    
+}
+
+   .side {
+    grid-area: sidebar;
+  }
+  .ad {
+    grid-area: ad;
+  
+  }
+  .main-footer {
+    grid-area: footer;
+    
+  }
+  .wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "sidebar"
+      "ad"
+      "footer";
+    
+  }
+
+  .wrappercontacto {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "sidebar"
+      "ad"
+      "footer";
+    
+  }
+
+  .content h1{
+      font-family: sans-serif;
+      text-decoration: underline;
+      color: darkslategray;
+  }
+
+
+
+  .main-nav ul{
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 10px;
+    color: beige;
+    background-color: rgb(155, 147, 111);
+    gap: 10px;
+}
+
+.main-nav ul li a{
+    padding: 3px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(134, 76, 72);
+    text-align: center;
+
+}
+
+.video-responsive {
+    overflow:hidden;
+    padding-bottom:400px; 
+    position:relative;
+    height:0;
+    
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    
+    
+} 
+
+.contacto__imagen__fondo {
+    background-image: url("../imagenes/fondo3\ servicios\ graficos.jpg"); 
+    opacity: .8;
+    grid-area: auto;
+    background-size: cover;    
+    background-position-x: right;
+    font-family: sans-serif;
+}
+
+
+
+
+@media (min-width: 500px) {
+    .wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "header  header"
+        "nav     nav"
+        "content ad"
+        "footer      footer";
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .main-nav ul{
+        list-style: none;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: beige;
+        background-color: rgb(155, 147, 111);
+        gap: 10px;
+        margin: 10px;
+        padding: 10px;
+    }  
+
+    .video-responsive {
+        overflow:hidden;
+        padding: bottom 0; 
+        position:relative;
+        height:auto;
+        
+        
+    }
+    .video-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        
+    }
+    .main-nav input {
+        display: none;
+    }
+    
+    
+  }
+
+  #servicios__graficos__texto__fondo{
+    text-align: left;
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+}
+.servicios__graficos__imagen__fondo{
+    background-image: url("../imagenes/fondo1-servicios-graficos-taza.png");
+    opacity: 1;
+    background-size: cover;
+    display: flexbox;
+}
+
+  @media (min-width: 700px) {
+    .wrapper {
+      grid-template-columns: 2fr 2fr 1fr;
+      grid-template-areas:
+        "header header  header"
+        "nav nav nav"
+        "content ad ad"
+        "footer footer  footer"
+     }
+     nav ul {
+       flex-direction: flex;
+     }
+
+     .main-nav ul{
+        list-style: none;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 30px;
+        color: beige;
+        background-color: rgb(155, 147, 111);
+        gap: 10px;
+        margin: 10px;
+        padding: 10px;
+    }  
+
+     .video-responsive {
+        overflow:hidden;
+        padding-bottom:400px; 
+        position:relative;
+        height:0;
+        
+    }
+    .video-responsive iframe{
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+                
+    }
+
+    .content{
+        font-size: 20px;
+    }
+
+    .main-nav input {
+        display: none;
+    }
+  }
+
+  .carousel-inner h5 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: black;
+  }
+  .carousel-inner p {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: black;
+  }
+  
+  .carousel-item {
+    opacity: 85%;
+  }
+
+  
